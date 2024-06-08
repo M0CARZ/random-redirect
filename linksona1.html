@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Redirect</title>
+    <script>
+        function redirectToRandomLink() {
+            var links = ["https://app.realeye.io/pl/test/7cf20d42-f110-4eba-9efc-efa933beb5f7/run", "https://app.realeye.io/pl/test/083416cc-85c6-4ecd-aa31-2bc814a5e927/run"];
+            var randomIndex = Math.floor(Math.random() * links.length);
+            window.location.href = links[randomIndex];
+        }
+    </script>
+</head>
+<body onload="redirectToRandomLink()">
+    <p>Trwa przekierowanie...</p>
+</body>
+</html>
